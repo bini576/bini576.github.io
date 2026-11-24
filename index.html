@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Biniyam Ademasu Afework - Cybersecurity Analyst, Security Engineer & Full-Stack Developer. Specialized in defensive security, network infrastructure, intrusion detection, and secure systems.">
+  <meta name="keywords" content="Biniyam Ademasu, Cybersecurity Analyst, Security Engineer, Penetration Testing, Intrusion Detection, Network Security, Bahir Dar University, Portfolio">
+  <meta name="author" content="Biniyam Ademasu Afework">
+  <title>Biniyam Ademasu Afework | Cybersecurity Analyst & Security Engineer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Scanning Grid / Cyber Overlay -->
+  <div class="cyber-grid-overlay"></div>
+  <div class="scanline"></div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="header" id="header">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-symbol">&lt;</span><span class="logo-text">BINI576</span><span class="logo-slash">/</span><span class="logo-symbol">&gt;</span>
+        <span class="status-indicator" title="System Online"></span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#hero" class="nav-link active"><i class="fa-solid fa-terminal"></i> <span>Home</span></a></li>
+          <li class="nav-item"><a href="#about" class="nav-link"><i class="fa-solid fa-user-shield"></i> <span>About</span></a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link"><i class="fa-solid fa-microchip"></i> <span>Skills</span></a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link"><i class="fa-solid fa-shield-halved"></i> <span>Projects</span></a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link"><i class="fa-solid fa-briefcase"></i> <span>Experience</span></a></li>
+          <li class="nav-item"><a href="#certifications" class="nav-link"><i class="fa-solid fa-certificate"></i> <span>Certifications</span></a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link"><i class="fa-solid fa-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+        <div class="nav-cta-wrapper">
+          <a href="#terminal-section" class="btn btn-outline-cyan btn-sm terminal-nav-btn"><i class="fa-solid fa-code"></i> CLI Terminal</a>
+          <a href="mailto:admasubiniyam96@gmail.com" class="btn btn-primary btn-sm"><i class="fa-solid fa-paper-plane"></i> Get in Touch</a>
+        </div>
+      </nav>
+
+      <div class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <canvas id="cyber-canvas"></canvas>
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="cyber-badge" data-reveal>
+            <span class="blinking-dot"></span>
+            <span class="badge-text">STATUS: DEFENSIVE SECURITY ONLINE // THREAT HUNTING ACTIVE</span>
+          </div>
+
+          <h1 class="hero-title" data-reveal>
+            <span class="hero-greeting">Hi, I'm</span>
+            <span class="hero-name glow-cyan">Biniyam Ademasu</span>
+            <span class="hero-surname">Afework</span>
+          </h1>
+
+          <div class="hero-typewriter-container" data-reveal>
+            <span class="typewriter-prefix">&gt;&nbsp;</span>
+            <span class="typewriter-text" id="typewriter"></span>
+            <span class="typewriter-cursor">_</span>
+          </div>
+
+          <p class="hero-description" data-reveal>
+            Cybersecurity graduate from <strong>Bahir Dar University</strong> (GPA: 3.43/4.00). Dedicated to architecting robust enterprise defenses, conducting intelligent vulnerability assessments, engineering automated intrusion detection systems, and developing secure, resilient software.
+          </p>
+
+          <div class="hero-actions" data-reveal>
+            <a href="#projects" class="btn btn-cyan"><i class="fa-solid fa-shield-halved"></i> Explore Projects</a>
+            <a href="#contact" class="btn btn-outline-green"><i class="fa-solid fa-envelope"></i> Contact Me</a>
+            <a href="https://github.com/bini576" target="_blank" rel="noopener noreferrer" class="btn btn-glass"><i class="fa-brands fa-github"></i> GitHub</a>
+          </div>
+
+          <!-- Hero Metrics / Badges -->
+          <div class="hero-metrics" data-reveal>
+            <div class="metric-card">
+              <span class="metric-number">3.43</span>
+              <span class="metric-label">B.Sc. Cyber Security GPA</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-number">6+</span>
+              <span class="metric-label">Security & Dev Projects</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-number">8</span>
+              <span class="metric-label">PTaaS Modular Services</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-number">100%</span>
+              <span class="metric-label">Defensive Commitment</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual" data-reveal>
+          <div class="terminal-card hero-terminal">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="terminal-title">bini576@sec-ops:~ (bash)</div>
+              <div class="terminal-action-icon"><i class="fa-solid fa-lock"></i></div>
+            </div>
+            <div class="terminal-body font-mono">
+              <p><span class="term-prompt">$</span> <span class="term-cmd">whoami</span></p>
+              <p class="term-output text-cyan">&gt; Biniyam Ademasu Afework [Cybersecurity Engineer]</p>
+              
+              <p><span class="term-prompt">$</span> <span class="term-cmd">cat /etc/profile/specializations.json</span></p>
+              <div class="term-output json-output">
+{
+  <span class="json-key">"degree"</span>: <span class="json-val">"B.Sc. Cyber Security"</span>,
+  <span class="json-key">"institution"</span>: <span class="json-val">"Bahir Dar University"</span>,
+  <span class="json-key">"focus_areas"</span>: [
+    <span class="json-val">"Network Defense"</span>,
+    <span class="json-val">"Intrusion Detection (AI/ML)"</span>,
+    <span class="json-val">"Penetration Testing (PTaaS/VDP)"</span>,
+    <span class="json-val">"Applied Cryptography (RSA/AES)"</span>
+  ],
+  <span class="json-key">"active_status"</span>: <span class="json-bool">true</span>,
+  <span class="json-key">"clearance_level"</span>: <span class="json-val">"Ready for Enterprise Impact"</span>
+}</div>
+
+              <p><span class="term-prompt">$</span> <span class="term-cmd">sec-check --verify-integrity</span></p>
+              <p class="term-output text-green">[OK] Network Interfaces Encrypted</p>
+              <p class="term-output text-green">[OK] Intrusion Detection Active</p>
+              <p class="term-output text-green">[OK] Secure Microservices Containerized</p>
+              <p class="term-output blink-text"><span class="term-prompt">$</span> <span class="type-indicator">Ready to engineer secure futures.</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-down-indicator" aria-label="Scroll to About section">
+        <span class="mouse-icon"><span class="wheel"></span></span>
+        <span class="scroll-text">EXPLORE SEC_PROFILE</span>
+      </a>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <div class="section-tag"><i class="fa-solid fa-fingerprint"></i> SEC_IDENTITY // 01</div>
+          <h2 class="section-title">About <span class="text-cyan">Biniyam</span></h2>
+          <div class="section-line"></div>
+          <p class="section-subtitle">Bridging cybersecurity strategy, defensive operations, and full-stack software resilience.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-bio-card" data-reveal>
+            <div class="card-glow"></div>
+            <div class="bio-header">
+              <div class="bio-avatar">
+                <i class="fa-solid fa-user-secret"></i>
+              </div>
+              <div class="bio-header-text">
+                <h3 class="bio-name">Biniyam Ademasu Afework</h3>
+                <p class="bio-role text-cyan">Cybersecurity Analyst &amp; Systems Engineer</p>
+                <p class="bio-loc"><i class="fa-solid fa-location-dot"></i> Ethiopia | Open to Remote &amp; Global Opportunities</p>
+              </div>
+            </div>
+
+            <div class="bio-body">
+              <p>
+                I am a dedicated cybersecurity graduate with a comprehensive foundation in <strong>defensive security</strong>, <strong>secure network architecture</strong>, <strong>vulnerability management</strong>, and <strong>full-stack development</strong>. Graduating from Bahir Dar University with a <strong>3.43/4.00 GPA</strong> in Cyber Security, I merge analytical rigor with hands-on technical execution.
+              </p>
+              <p>
+                My work spans designing and building a multi-service <strong>Crowdsourced Penetration Testing Platform</strong> (8 core modules including VDP, Bug Bounty, and AI Red Teaming), training <strong>Machine Learning models for Network Intrusion Detection</strong>, designing enterprise-grade <strong>campus network architectures in Cisco Packet Tracer</strong>, and deploying educational demonstrations on social engineering and cryptography.
+              </p>
+              <p>
+                Whether dissecting packet captures in Wireshark, auditing API endpoints with Burp Suite, containerizing microservices in Docker, or writing robust backend services in Go and Python, I take pride in engineering secure systems from the ground up.
+              </p>
+            </div>
+
+            <div class="bio-highlights">
+              <div class="highlight-item">
+                <i class="fa-solid fa-graduation-cap highlight-icon text-cyan"></i>
+                <div class="highlight-content">
+                  <h4>B.Sc. in Cyber Security</h4>
+                  <p>Bahir Dar University &bull; Graduated June 2026 &bull; GPA: 3.43 / 4.00</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-language highlight-icon text-green"></i>
+                <div class="highlight-content">
+                  <h4>Language Proficiency</h4>
+                  <p>English (Fluent, Professional) &bull; Amharic (Native)</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-award highlight-icon text-purple"></i>
+                <div class="highlight-content">
+                  <h4>Industry Simulation Certifications</h4>
+                  <p>Mastercard Cybersecurity &bull; Tata Cybersecurity Analyst &bull; BDU CDC</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-pillars" data-reveal>
+            <!-- Pillar 1 -->
+            <div class="pillar-card">
+              <div class="pillar-icon text-cyan"><i class="fa-solid fa-network-wired"></i></div>
+              <div class="pillar-info">
+                <h3>Defensive Network Security</h3>
+                <p>Architecting enterprise topologies, enforcing VLAN segmentation, stateful ACLs, DHCP snooping, and proactive intrusion detection to mitigate multi-vector threats.</p>
+              </div>
+            </div>
+            <!-- Pillar 2 -->
+            <div class="pillar-card">
+              <div class="pillar-icon text-green"><i class="fa-solid fa-bug-slash"></i></div>
+              <div class="pillar-info">
+                <h3>Vulnerability &amp; Pentesting Management</h3>
+                <p>Establishing structured Vulnerability Disclosure Programs (VDP), PTaaS workflows, bug bounty pipelines, and vulnerability triage across web and API attack surfaces.</p>
+              </div>
+            </div>
+            <!-- Pillar 3 -->
+            <div class="pillar-card">
+              <div class="pillar-icon text-purple"><i class="fa-solid fa-brain"></i></div>
+              <div class="pillar-info">
+                <h3>AI &amp; Threat Intelligence</h3>
+                <p>Harnessing machine learning algorithms in Python and Jupyter to analyze abnormal network telemetry, detect zero-day anomalies, and classify hostile payloads.</p>
+              </div>
+            </div>
+            <!-- Pillar 4 -->
+            <div class="pillar-card">
+              <div class="pillar-icon text-yellow"><i class="fa-solid fa-code-merge"></i></div>
+              <div class="pillar-info">
+                <h3>Secure Software Engineering</h3>
+                <p>Writing reliable backend services in Go, Python, and C++, enforcing least privilege, input sanitization, cryptographic guarantees (RSA/AES), and Docker isolation.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <div class="section-tag"><i class="fa-solid fa-microchip"></i> TECH_MATRIX // 02</div>
+          <h2 class="section-title">Technical <span class="text-cyan">Arsenal</span></h2>
+          <div class="section-line"></div>
+          <p class="section-subtitle">Proficiencies in programming languages, offensive/defensive cybersecurity disciplines, and DevOps tooling.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Programming Languages with Bars -->
+          <div class="skills-card" data-reveal>
+            <div class="skills-card-header">
+              <div class="card-icon text-cyan"><i class="fa-solid fa-code"></i></div>
+              <h3 class="card-title">Programming &amp; Scripting</h3>
+            </div>
+            <p class="card-desc">Core languages used for security tooling, backend APIs, automation, and exploit analysis.</p>
+
+            <div class="skill-bars">
+              <div class="skill-bar-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-python text-yellow"></i> Python (Automation, ML &amp; Scripting)</span>
+                  <span class="skill-percent">90%</span>
+                </div>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill fill-cyan" data-level="90"></div>
+                </div>
+              </div>
+
+              <div class="skill-bar-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-golang text-cyan"></i> Go (Golang - Microservices &amp; Systems)</span>
+                  <span class="skill-percent">85%</span>
+                </div>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill fill-cyan" data-level="85"></div>
+                </div>
+              </div>
+
+              <div class="skill-bar-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-js text-yellow"></i> JavaScript (Node.js &amp; Frontend)</span>
+                  <span class="skill-percent">85%</span>
+                </div>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill fill-green" data-level="85"></div>
+                </div>
+              </div>
+
+              <div class="skill-bar-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-java text-red"></i> Java (Enterprise &amp; Cryptography)</span>
+                  <span class="skill-percent">80%</span>
+                </div>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill fill-green" data-level="80"></div>
+                </div>
+              </div>
+
+              <div class="skill-bar-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-c"></i> C++ (Data Structures &amp; Systems)</span>
+                  <span class="skill-percent">75%</span>
+                </div>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill fill-purple" data-level="75"></div>
+                </div>
+              </div>
+
+              <div class="skill-bar-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-html5 text-orange"></i> HTML5 &amp; CSS3 (Responsive UI/UX)</span>
+                  <span class="skill-percent">92%</span>
+                </div>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill fill-purple" data-level="92"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cybersecurity Competencies -->
+          <div class="skills-card" data-reveal>
+            <div class="skills-card-header">
+              <div class="card-icon text-green"><i class="fa-solid fa-shield-virus"></i></div>
+              <h3 class="card-title">Cybersecurity Specializations</h3>
+            </div>
+            <p class="card-desc">Demonstrated capabilities across defensive security, threat modeling, and network infrastructure.</p>
+
+            <div class="cyber-tags-container">
+              <div class="cyber-tag-item">
+                <div class="tag-icon"><i class="fa-solid fa-network-wired text-cyan"></i></div>
+                <div class="tag-text">
+                  <strong>Network Security &amp; Segmentation</strong>
+                  <span>VLANs, Firewalls, Routing Protocols, Access Control Lists</span>
+                </div>
+              </div>
+
+              <div class="cyber-tag-item">
+                <div class="tag-icon"><i class="fa-solid fa-bug text-green"></i></div>
+                <div class="tag-text">
+                  <strong>Vulnerability Assessment &amp; VDP</strong>
+                  <span>Vulnerability Disclosure Programs, Bug Bounty, PTaaS Architecture</span>
+                </div>
+              </div>
+
+              <div class="cyber-tag-item">
+                <div class="tag-icon"><i class="fa-solid fa-radar text-yellow"></i></div>
+                <div class="tag-text">
+                  <strong>Intrusion Detection Systems (IDS)</strong>
+                  <span>ML-based anomaly classification, signature vs. heuristic detection</span>
+                </div>
+              </div>
+
+              <div class="cyber-tag-item">
+                <div class="tag-icon"><i class="fa-solid fa-key text-purple"></i></div>
+                <div class="tag-text">
+                  <strong>Applied Cryptography</strong>
+                  <span>RSA Public Key, AES-256 Symmetric Encryption, Key Lifecycle</span>
+                </div>
+              </div>
+
+              <div class="cyber-tag-item">
+                <div class="tag-icon"><i class="fa-solid fa-user-ninja text-red"></i></div>
+                <div class="tag-text">
+                  <strong>Penetration Testing Concepts</strong>
+                  <span>Reconnaissance, Web exploitation, OWASP Top 10, Port scanning</span>
+                </div>
+              </div>
+
+              <div class="cyber-tag-item">
+                <div class="tag-icon"><i class="fa-solid fa-users-viewfinder text-cyan"></i></div>
+                <div class="tag-text">
+                  <strong>Security Awareness &amp; Social Engineering</strong>
+                  <span>Phishing simulations (Gophish), cloning analysis, defensive training</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools & Platforms -->
+          <div class="skills-card full-width-card" data-reveal>
+            <div class="skills-card-header">
+              <div class="card-icon text-purple"><i class="fa-solid fa-toolbox"></i></div>
+              <h3 class="card-title">Tools, Platforms &amp; Security Ecosystem</h3>
+            </div>
+            <p class="card-desc">Industry-standard tools and environments leveraged for analysis, simulation, testing, and deployment.</p>
+
+            <div class="tool-badges-grid">
+              <div class="tool-badge">
+                <i class="fa-brands fa-linux text-yellow"></i>
+                <span class="tool-name">Kali Linux</span>
+                <span class="tool-cat">Security OS</span>
+              </div>
+              <div class="tool-badge">
+                <i class="fa-brands fa-ubuntu text-orange"></i>
+                <span class="tool-name">Ubuntu Server</span>
+                <span class="tool-cat">Linux Distro</span>
+              </div>
+              <div class="tool-badge">
+                <i class="fa-brands fa-docker text-cyan"></i>
+                <span class="tool-name">Docker</span>
+                <span class="tool-cat">Containerization</span>
+              </div>
+              <div class="tool-badge">
+                <i class="fa-solid fa-network-wired text-green"></i>
+                <span class="tool-name">Wireshark</span>
+                <span class="tool-cat">Packet Analysis</span>
+              </div>
+              <div class="tool-badge">
+                <i class="fa-solid fa-spider text-orange"></i>
+                <span class="tool-name">Burp Suite</span>
+                <span class="tool-cat">Web App Auditing</span>
+              </div>
+              <div class="tool-badge">
+                <i class="fa-solid fa-diagram-project text-cyan"></i>
+                <span class="tool-name">Cisco Packet Tracer</span>
+                <span class="tool-cat">Network Simulation</span>
+              </div>
+              <div class="tool-badge">
+                <i class="fa-brands fa-git-alt text-red"></i>
+                <span class="tool-name">Git &amp; GitHub</span>
+                <span class="tool-cat">Version Control</span>
+              </div>
+              <div class="tool-badge">
+                <i class="fa-solid fa-fish-fins text-purple"></i>
+                <span class="tool-name">Gophish</span>
+                <span class="tool-cat">Awareness Simulation</span>
+              </div>
+              <div class="tool-badge">
+                <i class="fa-solid fa-book-open text-orange"></i>
+                <span class="tool-name">Jupyter Notebook</span>
+                <span class="tool-cat">ML &amp; Data Analysis</span>
+              </div>
+              <div class="tool-badge">
+                <i class="fa-solid fa-server text-red"></i>
+                <span class="tool-name">Metasploitable2</span>
+                <span class="tool-cat">Vulnerable Lab</span>
+              </div>
+              <div class="tool-badge">
+                <i class="fa-solid fa-code text-cyan"></i>
+                <span class="tool-name">VS Code</span>
+                <span class="tool-cat">IDE</span>
+              </div>
+              <div class="tool-badge">
+                <i class="fa-solid fa-gears text-green"></i>
+                <span class="tool-name">REST APIs</span>
+                <span class="tool-cat">Backend Protocol</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <div class="section-tag"><i class="fa-solid fa-folder-closed"></i> ARTIFACTS // 03</div>
+          <h2 class="section-title">Featured <span class="text-cyan">Projects</span></h2>
+          <div class="section-line"></div>
+          <p class="section-subtitle">A showcase of production-oriented cybersecurity architectures, ML models, network infrastructure, and cryptographic tools.</p>
+        </div>
+
+        <!-- Project Filter Buttons -->
+        <div class="project-filters" data-reveal>
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="security">Security &amp; Pentesting</button>
+          <button class="filter-btn" data-filter="network">Network Infrastructure</button>
+          <button class="filter-btn" data-filter="ai-dev">AI &amp; Software Dev</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Next-Gen Crowdsourced Pentesting Platform -->
+          <div class="project-card featured-project" data-category="security ai-dev" data-reveal>
+            <div class="project-card-banner">
+              <span class="badge-flag"><i class="fa-solid fa-star"></i> Graduation Project</span>
+              <span class="project-year">2026</span>
+            </div>
+            <div class="project-header">
+              <div class="project-icon-wrapper">
+                <i class="fa-solid fa-shield-virus project-main-icon text-cyan"></i>
+              </div>
+              <div class="project-title-area">
+                <span class="project-sub-tag">Bahir Dar University &bull; Group Capstone</span>
+                <h3 class="project-title">Next-Generation Crowdsourced Penetration Testing Platform</h3>
+              </div>
+            </div>
+
+            <p class="project-desc">
+              A comprehensive, modular enterprise cybersecurity platform designed to bridge organizations with vetted, trusted ethical hackers and security researchers. Featuring 8 autonomous, containerized microservices engineered to streamline vulnerability discovery, remediation, and verification.
+            </p>
+
+            <div class="project-features-list">
+              <h4><i class="fa-solid fa-layer-group text-cyan"></i> 8 Core Integrated Services:</h4>
+              <div class="service-pill-grid">
+                <span class="service-pill"><i class="fa-solid fa-bug"></i> Vulnerability Disclosure (VDP)</span>
+                <span class="service-pill"><i class="fa-solid fa-handshake"></i> Pentesting-as-a-Service (PTaaS)</span>
+                <span class="service-pill"><i class="fa-solid fa-trophy"></i> Bug Bounty Management</span>
+                <span class="service-pill"><i class="fa-solid fa-robot"></i> AI Red Teaming</span>
+                <span class="service-pill"><i class="fa-solid fa-chalkboard-user"></i> Security Training</span>
+                <span class="service-pill"><i class="fa-solid fa-lock"></i> Organizational Trust Center</span>
+                <span class="service-pill"><i class="fa-solid fa-flag"></i> Security Challenges &amp; CTF</span>
+                <span class="service-pill"><i class="fa-solid fa-code-compare"></i> Automated Code Review</span>
+              </div>
+            </div>
+
+            <div class="project-tech-stack">
+              <span class="tech-tag">Go (Golang)</span>
+              <span class="tech-tag">Docker Containerization</span>
+              <span class="tech-tag">Microservices</span>
+              <span class="tech-tag">REST APIs</span>
+              <span class="tech-tag">Linux</span>
+              <span class="tech-tag">Defensive Security</span>
+            </div>
+
+            <div class="project-actions">
+              <a href="https://github.com/bini576" target="_blank" rel="noopener noreferrer" class="btn btn-outline-cyan btn-sm">
+                <i class="fa-brands fa-github"></i> Repository
+              </a>
+              <span class="project-status-note"><i class="fa-solid fa-circle-check text-green"></i> Completed &bull; Evaluated</span>
+            </div>
+          </div>
+
+          <!-- Project 2: AI-Based Intrusion Detection System -->
+          <div class="project-card" data-category="security ai-dev" data-reveal>
+            <div class="project-card-banner">
+              <span class="badge-flag sec-flag"><i class="fa-solid fa-brain"></i> Machine Learning</span>
+              <span class="project-year">2026</span>
+            </div>
+            <div class="project-header">
+              <div class="project-icon-wrapper">
+                <i class="fa-solid fa-radar project-main-icon text-green"></i>
+              </div>
+              <div class="project-title-area">
+                <span class="project-sub-tag">Intelligent Network Defense</span>
+                <h3 class="project-title">AI-Based Intrusion Detection System</h3>
+              </div>
+            </div>
+
+            <p class="project-desc">
+              An intelligent intrusion detection system harnessing supervised machine learning to classify network flow records into benign traffic or multi-class malicious attacks. Trained, tuned, and evaluated within interactive Jupyter environments with feature scaling and confusion matrix telemetry.
+            </p>
+
+            <ul class="project-bullets">
+              <li><i class="fa-solid fa-check text-green"></i> Preprocessed network flow datasets, eliminating noise and collinear features.</li>
+              <li><i class="fa-solid fa-check text-green"></i> Built and evaluated high-accuracy classifiers with balanced precision &amp; recall.</li>
+              <li><i class="fa-solid fa-check text-green"></i> Designed for real-time packet telemetry triage to reduce security analyst fatigue.</li>
+            </ul>
+
+            <div class="project-tech-stack">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Jupyter Notebook</span>
+              <span class="tech-tag">Scikit-Learn</span>
+              <span class="tech-tag">Pandas &amp; NumPy</span>
+              <span class="tech-tag">Network Flow Analysis</span>
+            </div>
+
+            <div class="project-actions">
+              <a href="https://github.com/bini576/AI-based-intrusion-detection-System" target="_blank" rel="noopener noreferrer" class="btn btn-outline-green btn-sm">
+                <i class="fa-brands fa-github"></i> View on GitHub
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 3: Secure Campus Network Design -->
+          <div class="project-card" data-category="network security" data-reveal>
+            <div class="project-card-banner">
+              <span class="badge-flag net-flag"><i class="fa-solid fa-network-wired"></i> Enterprise Infra</span>
+              <span class="project-year">2025</span>
+            </div>
+            <div class="project-header">
+              <div class="project-icon-wrapper">
+                <i class="fa-solid fa-diagram-project project-main-icon text-cyan"></i>
+              </div>
+              <div class="project-title-area">
+                <span class="project-sub-tag">Jinka Polytechnic College</span>
+                <h3 class="project-title">Secure Campus Network Design</h3>
+              </div>
+            </div>
+
+            <p class="project-desc">
+              An enterprise-grade campus network architecture modeled for Jinka Polytechnic College. Implemented in Cisco Packet Tracer with multi-tiered hierarchical design (Core, Distribution, Access), strict departmental VLAN segregation, and fortified perimeter boundaries.
+            </p>
+
+            <ul class="project-bullets">
+              <li><i class="fa-solid fa-check text-cyan"></i> Configured routers, multi-layer switches, inter-VLAN routing, and trunking.</li>
+              <li><i class="fa-solid fa-check text-cyan"></i> Enforced Extended Access Control Lists (ACLs) to isolate sensitive admin data.</li>
+              <li><i class="fa-solid fa-check text-cyan"></i> Hardened endpoints using DHCP Snooping, Port Security, and secure management protocols.</li>
+            </ul>
+
+            <div class="project-tech-stack">
+              <span class="tech-tag">Cisco Packet Tracer</span>
+              <span class="tech-tag">VLAN Segmentation</span>
+              <span class="tech-tag">Access Control Lists (ACLs)</span>
+              <span class="tech-tag">DHCP Snooping</span>
+              <span class="tech-tag">Routing &amp; Switching</span>
+            </div>
+
+            <div class="project-actions">
+              <a href="https://github.com/bini576/Secure-compuse-network-design" target="_blank" rel="noopener noreferrer" class="btn btn-outline-cyan btn-sm">
+                <i class="fa-brands fa-github"></i> View on GitHub
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 4: Phishing Awareness Demonstration -->
+          <div class="project-card" data-category="security" data-reveal>
+            <div class="project-card-banner">
+              <span class="badge-flag warn-flag"><i class="fa-solid fa-triangle-exclamation"></i> Security Awareness</span>
+              <span class="project-year">2025</span>
+            </div>
+            <div class="project-header">
+              <div class="project-icon-wrapper">
+                <i class="fa-solid fa-fish-fins project-main-icon text-orange"></i>
+              </div>
+              <div class="project-title-area">
+                <span class="project-sub-tag">Social Engineering Defense</span>
+                <h3 class="project-title">Phishing Awareness Demonstration</h3>
+              </div>
+            </div>
+
+            <p class="project-desc">
+              An educational security demonstration illustrating the anatomy of credential harvesting and website cloning attacks. Designed to educate end-users, trainees, and staff on detecting subtle URL spoofing, SSL/TLS misconceptions, and social engineering traps.
+            </p>
+
+            <ul class="project-bullets">
+              <li><i class="fa-solid fa-check text-orange"></i> Replicated realistic login vectors strictly for educational vulnerability awareness.</li>
+              <li><i class="fa-solid fa-check text-orange"></i> Integrated educational debrief banners explaining how users can spot phishing indicators.</li>
+              <li><i class="fa-solid fa-check text-orange"></i> Deployed via GitHub Pages as an accessible security training resource.</li>
+            </ul>
+
+            <div class="project-tech-stack">
+              <span class="tech-tag">HTML5 / CSS3</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Social Engineering</span>
+              <span class="tech-tag">Security Education</span>
+              <span class="tech-tag">GitHub Pages</span>
+            </div>
+
+            <div class="project-actions">
+              <a href="https://github.com/bini576/phishing-awaireness-project" target="_blank" rel="noopener noreferrer" class="btn btn-outline-cyan btn-sm">
+                <i class="fa-brands fa-github"></i> Code
+              </a>
+              <a href="https://bini576.github.io/phishing-awaireness-project" target="_blank" rel="noopener noreferrer" class="btn btn-outline-green btn-sm">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 5: RSA & AES Cryptography Project -->
+          <div class="project-card" data-category="security ai-dev" data-reveal>
+            <div class="project-card-banner">
+              <span class="badge-flag cryp-flag"><i class="fa-solid fa-lock"></i> Applied Crypto</span>
+              <span class="project-year">2025</span>
+            </div>
+            <div class="project-header">
+              <div class="project-icon-wrapper">
+                <i class="fa-solid fa-key project-main-icon text-purple"></i>
+              </div>
+              <div class="project-title-area">
+                <span class="project-sub-tag">Dual Cryptographic Implementations</span>
+                <h3 class="project-title">RSA &amp; AES Cryptography Engineering</h3>
+              </div>
+            </div>
+
+            <p class="project-desc">
+              A comprehensive exploration into symmetric and asymmetric encryption primitives. Features a native Java implementation of RSA key pair generation, encryption, and decryption, alongside an educational Python keystroke logger demonstrating AES-256 payload encryption for malware defense research.
+            </p>
+
+            <ul class="project-bullets">
+              <li><i class="fa-solid fa-check text-purple"></i> Java RSA engine for public/private key mathematical operations &amp; digital signatures.</li>
+              <li><i class="fa-solid fa-check text-purple"></i> Python AES-256 demonstration showing encrypted C2 exfiltration patterns.</li>
+              <li><i class="fa-solid fa-check text-purple"></i> Formulated defensive mitigation rules to detect unauthorized keystroke hooks.</li>
+            </ul>
+
+            <div class="project-tech-stack">
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">RSA Asymmetric</span>
+              <span class="tech-tag">AES-256 Symmetric</span>
+              <span class="tech-tag">Malware Defense</span>
+            </div>
+
+            <div class="project-actions">
+              <a href="https://github.com/bini576/AsymmetricEncryption" target="_blank" rel="noopener noreferrer" class="btn btn-outline-purple btn-sm">
+                <i class="fa-brands fa-github"></i> View on GitHub
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 6: Soldier Management System -->
+          <div class="project-card" data-category="ai-dev" data-reveal>
+            <div class="project-card-banner">
+              <span class="badge-flag sys-flag"><i class="fa-solid fa-shield"></i> Systems Software</span>
+              <span class="project-year">2024</span>
+            </div>
+            <div class="project-header">
+              <div class="project-icon-wrapper">
+                <i class="fa-solid fa-person-military-pointing project-main-icon text-yellow"></i>
+              </div>
+              <div class="project-title-area">
+                <span class="project-sub-tag">C++ Data Structures &amp; OOP</span>
+                <h3 class="project-title">Soldier Management System</h3>
+              </div>
+            </div>
+
+            <p class="project-desc">
+              A robust command-line defense personnel management application developed in modern C++. Incorporates custom linear and non-linear data structures, binary file I/O persistence, and role-based access validation for operational military record tracking.
+            </p>
+
+            <ul class="project-bullets">
+              <li><i class="fa-solid fa-check text-yellow"></i> Engineered linked lists and binary trees for fast search, insertion, and sorting.</li>
+              <li><i class="fa-solid fa-check text-yellow"></i> Built encrypted binary file storage protecting personnel records from tampering.</li>
+              <li><i class="fa-solid fa-check text-yellow"></i> Strict memory management avoiding buffer overflow vulnerabilities.</li>
+            </ul>
+
+            <div class="project-tech-stack">
+              <span class="tech-tag">C++</span>
+              <span class="tech-tag">Object-Oriented Design</span>
+              <span class="tech-tag">Data Structures</span>
+              <span class="tech-tag">File Handling</span>
+              <span class="tech-tag">Memory Management</span>
+            </div>
+
+            <div class="project-actions">
+              <a href="https://github.com/bini576/Soldier-Management-System" target="_blank" rel="noopener noreferrer" class="btn btn-outline-yellow btn-sm">
+                <i class="fa-brands fa-github"></i> View on GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Terminal CLI Section -->
+    <section class="section terminal-interactive-section" id="terminal-section">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <div class="section-tag"><i class="fa-solid fa-terminal"></i> LIVE_SESSION // 04</div>
+          <h2 class="section-title">Interactive <span class="text-green">Security Terminal</span></h2>
+          <div class="section-line"></div>
+          <p class="section-subtitle">Test out commands directly in this simulated cybersecurity CLI. Try typing <code>help</code>, <code>whoami</code>, <code>skills</code>, <code>projects</code>, or <code>contact</code>.</p>
+        </div>
+
+        <div class="terminal-shell-card" data-reveal>
+          <div class="terminal-shell-topbar">
+            <div class="window-controls">
+              <span class="w-dot red"></span>
+              <span class="w-dot yellow"></span>
+              <span class="w-dot green"></span>
+            </div>
+            <div class="window-title"><i class="fa-solid fa-shield-cat"></i> guest@bini576-sec-terminal: ~ (v1.0.4)</div>
+            <div class="window-actions">
+              <button id="clear-term-btn" title="Clear Terminal"><i class="fa-solid fa-trash-can"></i></button>
+            </div>
+          </div>
+
+          <div class="terminal-shell-screen" id="terminal-screen">
+            <div class="term-welcome-msg">
+              <pre class="ascii-art text-cyan">
+  ____  ___ _   _ ___ ____ _____ _____ 
+ | __ )|_ _| \ | |_ _|___ |___  |___ / 
+ |  _ \ | ||  \| || |  / /   / /  |_ \ 
+ | |_) || || |\  || | / /   / /  ___) |
+ |____/|___|_| \_|___/_/   /_/  |____/ 
+ Biniyam Ademasu Afework // SecOps Shell
+              </pre>
+              <p class="text-muted">Type <span class="text-green font-bold">help</span> to view all available commands or click quick links below.</p>
+              <div class="quick-cmd-chips">
+                <button class="cmd-chip" data-cmd="help">help</button>
+                <button class="cmd-chip" data-cmd="whoami">whoami</button>
+                <button class="cmd-chip" data-cmd="skills">skills</button>
+                <button class="cmd-chip" data-cmd="projects">projects</button>
+                <button class="cmd-chip" data-cmd="experience">experience</button>
+                <button class="cmd-chip" data-cmd="certifications">certifications</button>
+                <button class="cmd-chip" data-cmd="contact">contact</button>
+                <button class="cmd-chip" data-cmd="clear">clear</button>
+              </div>
+            </div>
+            <div id="terminal-history"></div>
+            <div class="terminal-input-row">
+              <span class="term-prompt font-mono text-cyan">guest@bini576:~$</span>
+              <input type="text" id="terminal-input" class="font-mono" autocomplete="off" spellcheck="false" placeholder="Type a command (e.g. 'help')...">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience & Education Section -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <div class="section-tag"><i class="fa-solid fa-timeline"></i> CAREER_PATH // 05</div>
+          <h2 class="section-title">Experience &amp; <span class="text-cyan">Education</span></h2>
+          <div class="section-line"></div>
+          <p class="section-subtitle">Hands-on enterprise IT internship experience backed by rigorous academic foundations in cybersecurity.</p>
+        </div>
+
+        <div class="timeline-container">
+          <!-- Timeline Item 1: Internship -->
+          <div class="timeline-item" data-reveal>
+            <div class="timeline-marker">
+              <i class="fa-solid fa-network-wired text-cyan"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <span class="timeline-badge work-badge">Professional Internship</span>
+                  <h3 class="timeline-role">Information Technology Intern</h3>
+                  <h4 class="timeline-org text-cyan">Jinka Polytechnic College &mdash; ICT Directorate</h4>
+                </div>
+                <div class="timeline-meta">
+                  <span class="timeline-date"><i class="fa-regular fa-calendar"></i> Jul 2025 &ndash; Sep 2025</span>
+                  <span class="timeline-loc"><i class="fa-solid fa-location-dot"></i> Jinka, Ethiopia</span>
+                </div>
+              </div>
+
+              <div class="timeline-body">
+                <p class="timeline-summary">
+                  Collaborated directly with the ICT Directorate to manage enterprise campus network stability, execute proactive technical support, and overhaul digital security policies.
+                </p>
+                <ul class="timeline-bullets">
+                  <li>
+                    <i class="fa-solid fa-angle-right text-cyan"></i>
+                    <span><strong>Network Administration &amp; Technical Support:</strong> Monitored, diagnosed, and resolved critical network bottlenecks, hardware malfunctions, and endpoint connectivity issues across administrative and academic departments.</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-angle-right text-cyan"></i>
+                    <span><strong>Secure Network Design Architecture:</strong> Participated in infrastructure modernization planning; designed a comprehensive, multi-VLAN campus network simulation using Cisco Packet Tracer to enforce departmental segmentation and traffic segregation.</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-angle-right text-cyan"></i>
+                    <span><strong>Enterprise Security Hardening:</strong> Configured switch port security, access control lists, and secure administrative routing protocols to reduce potential lateral movement vectors.</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-angle-right text-cyan"></i>
+                    <span><strong>Cybersecurity Awareness &amp; Education:</strong> Supported staff and students in security awareness initiatives, promoting strong password hygiene, physical security, and recognizing social engineering traps.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="timeline-tags">
+                <span class="mini-tag">Cisco Packet Tracer</span>
+                <span class="mini-tag">Network Administration</span>
+                <span class="mini-tag">Enterprise Troubleshooting</span>
+                <span class="mini-tag">Infrastructure Hardening</span>
+                <span class="mini-tag">User Awareness</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2: Education -->
+          <div class="timeline-item" data-reveal>
+            <div class="timeline-marker edu-marker">
+              <i class="fa-solid fa-graduation-cap text-green"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <span class="timeline-badge edu-badge">Higher Education</span>
+                  <h3 class="timeline-role">Bachelor of Science in Cyber Security</h3>
+                  <h4 class="timeline-org text-green">Bahir Dar University &mdash; Faculty of Computing</h4>
+                </div>
+                <div class="timeline-meta">
+                  <span class="timeline-date"><i class="fa-regular fa-calendar"></i> Graduated June 2026</span>
+                  <span class="timeline-loc"><i class="fa-solid fa-location-dot"></i> Bahir Dar, Ethiopia</span>
+                </div>
+              </div>
+
+              <div class="timeline-body">
+                <div class="gpa-banner">
+                  <div class="gpa-score"><span class="number">3.43</span> <span class="max">/ 4.00 GPA</span></div>
+                  <div class="gpa-desc">Demonstrated academic excellence in theoretical and applied computing disciplines.</div>
+                </div>
+
+                <p class="timeline-summary">
+                  Comprehensive 4-year degree curriculum emphasizing defensive and offensive security principles, applied cryptography, network routing &amp; switching, computer forensics, malware analysis, distributed systems, and secure software development lifecycles.
+                </p>
+
+                <div class="coursework-grid">
+                  <span class="course-chip"><i class="fa-solid fa-check"></i> Network &amp; Internet Security</span>
+                  <span class="course-chip"><i class="fa-solid fa-check"></i> Cryptography &amp; Information Security</span>
+                  <span class="course-chip"><i class="fa-solid fa-check"></i> Ethical Hacking &amp; Countermeasures</span>
+                  <span class="course-chip"><i class="fa-solid fa-check"></i> Operating Systems &amp; Linux Internals</span>
+                  <span class="course-chip"><i class="fa-solid fa-check"></i> Database Management Systems</span>
+                  <span class="course-chip"><i class="fa-solid fa-check"></i> Artificial Intelligence &amp; ML</span>
+                  <span class="course-chip"><i class="fa-solid fa-check"></i> Data Structures &amp; Algorithms</span>
+                  <span class="course-chip"><i class="fa-solid fa-check"></i> Computer System Architecture</span>
+                </div>
+              </div>
+
+              <div class="timeline-tags">
+                <span class="mini-tag">Cybersecurity Degree</span>
+                <span class="mini-tag">Bahir Dar University</span>
+                <span class="mini-tag">GPA: 3.43/4.00</span>
+                <span class="mini-tag">Group Capstone Lead</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="section cert-section" id="certifications">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <div class="section-tag"><i class="fa-solid fa-certificate"></i> CREDENTIALS // 06</div>
+          <h2 class="section-title">Certifications &amp; <span class="text-cyan">Simulations</span></h2>
+          <div class="section-line"></div>
+          <p class="section-subtitle">Verified industry job simulations and professional competencies.</p>
+        </div>
+
+        <div class="cert-grid">
+          <!-- Cert 1: Mastercard -->
+          <div class="cert-card" data-reveal>
+            <div class="cert-header">
+              <div class="cert-icon-box text-red">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <div class="cert-issuer-info">
+                <span class="cert-issuer">Mastercard / Forage</span>
+                <span class="cert-year">2025</span>
+              </div>
+            </div>
+            <h3 class="cert-title">Mastercard Cybersecurity Job Simulation</h3>
+            <p class="cert-desc">
+              Completed practical tasks covering enterprise security threats, phishing analysis, threat intelligence evaluation, security advisory documentation, and incident response procedures.
+            </p>
+            <div class="cert-skills">
+              <span class="cert-skill-tag">Threat Analysis</span>
+              <span class="cert-skill-tag">Phishing Defense</span>
+              <span class="cert-skill-tag">Incident Response</span>
+              <span class="cert-skill-tag">Advisory Writing</span>
+            </div>
+            <div class="cert-footer">
+              <span class="verified-badge"><i class="fa-solid fa-circle-check text-green"></i> Verified Completion</span>
+            </div>
+          </div>
+
+          <!-- Cert 2: Tata -->
+          <div class="cert-card" data-reveal>
+            <div class="cert-header">
+              <div class="cert-icon-box text-cyan">
+                <i class="fa-solid fa-user-shield"></i>
+              </div>
+              <div class="cert-issuer-info">
+                <span class="cert-issuer">Tata / Forage</span>
+                <span class="cert-year">2025</span>
+              </div>
+            </div>
+            <h3 class="cert-title">Tata Cybersecurity Analyst Job Simulation</h3>
+            <p class="cert-desc">
+              Simulated real-world corporate cyber defense scenarios involving SOC triage, IAM policy design, vulnerability remediation prioritization, and business risk communication.
+            </p>
+            <div class="cert-skills">
+              <span class="cert-skill-tag">SOC Triage</span>
+              <span class="cert-skill-tag">IAM Policies</span>
+              <span class="cert-skill-tag">Risk Assessment</span>
+              <span class="cert-skill-tag">Vulnerability Management</span>
+            </div>
+            <div class="cert-footer">
+              <span class="verified-badge"><i class="fa-solid fa-circle-check text-green"></i> Verified Completion</span>
+            </div>
+          </div>
+
+          <!-- Cert 3: BDU CDC -->
+          <div class="cert-card" data-reveal>
+            <div class="cert-header">
+              <div class="cert-icon-box text-green">
+                <i class="fa-solid fa-lightbulb"></i>
+              </div>
+              <div class="cert-issuer-info">
+                <span class="cert-issuer">Bahir Dar Institute of Technology</span>
+                <span class="cert-year">2026</span>
+              </div>
+            </div>
+            <h3 class="cert-title">Employability, Job Readiness &amp; Design Thinking</h3>
+            <p class="cert-desc">
+              Graduated from BDiT Career Development Center's intensive program focusing on agile problem solving, human-centered design thinking, professional communications, and teamwork.
+            </p>
+            <div class="cert-skills">
+              <span class="cert-skill-tag">Design Thinking</span>
+              <span class="cert-skill-tag">Professional Readiness</span>
+              <span class="cert-skill-tag">Problem Solving</span>
+              <span class="cert-skill-tag">Team Leadership</span>
+            </div>
+            <div class="cert-footer">
+              <span class="verified-badge"><i class="fa-solid fa-circle-check text-green"></i> Certified Credential</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <div class="section-tag"><i class="fa-solid fa-envelope-open-text"></i> TRANSMISSION // 07</div>
+          <h2 class="section-title">Initiate <span class="text-cyan">Contact</span></h2>
+          <div class="section-line"></div>
+          <p class="section-subtitle">Whether you're looking for a dedicated cybersecurity engineer, a security analyst, or a versatile developer, my inbox is open.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Channels Info -->
+          <div class="contact-info-panel" data-reveal>
+            <div class="contact-card-box">
+              <div class="contact-card-icon text-cyan">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="contact-card-details">
+                <h4>Email Address</h4>
+                <a href="mailto:admasubiniyam96@gmail.com" class="contact-link" id="email-link">admasubiniyam96@gmail.com</a>
+              </div>
+              <button class="copy-btn" data-copy="admasubiniyam96@gmail.com" title="Copy Email">
+                <i class="fa-regular fa-copy"></i>
+              </button>
+            </div>
+
+            <div class="contact-card-box">
+              <div class="contact-card-icon text-green">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="contact-card-details">
+                <h4>Phone / WhatsApp</h4>
+                <a href="tel:+251916545839" class="contact-link">+251 91 654 5839</a>
+              </div>
+              <button class="copy-btn" data-copy="+251916545839" title="Copy Phone">
+                <i class="fa-regular fa-copy"></i>
+              </button>
+            </div>
+
+            <div class="contact-card-box">
+              <div class="contact-card-icon text-purple">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+              <div class="contact-card-details">
+                <h4>LinkedIn Network</h4>
+                <a href="https://linkedin.com/in/biniyam-ademasu" target="_blank" rel="noopener noreferrer" class="contact-link">linkedin.com/in/biniyam-ademasu</a>
+              </div>
+              <a href="https://linkedin.com/in/biniyam-ademasu" target="_blank" rel="noopener noreferrer" class="open-external-btn">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+
+            <div class="contact-card-box">
+              <div class="contact-card-icon text-yellow">
+                <i class="fa-brands fa-github"></i>
+              </div>
+              <div class="contact-card-details">
+                <h4>GitHub Repositories</h4>
+                <a href="https://github.com/bini576" target="_blank" rel="noopener noreferrer" class="contact-link">github.com/bini576</a>
+              </div>
+              <a href="https://github.com/bini576" target="_blank" rel="noopener noreferrer" class="open-external-btn">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+
+            <div class="contact-card-box">
+              <div class="contact-card-icon text-red">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="contact-card-details">
+                <h4>Physical Location</h4>
+                <p class="contact-text">Ethiopia (Ready for Worldwide Remote &amp; On-Site Relocation)</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Contact Form -->
+          <div class="contact-form-panel" data-reveal>
+            <div class="form-wrapper">
+              <div class="form-header">
+                <h3><i class="fa-solid fa-terminal text-cyan"></i> Encrypted Message Dispatcher</h3>
+                <p>Send an immediate message directly to my inbox.</p>
+              </div>
+
+              <form id="contact-form" class="cyber-form">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="name"><i class="fa-solid fa-user"></i> Your Name *</label>
+                    <input type="text" id="name" name="name" required placeholder="John Doe">
+                  </div>
+                  <div class="form-group">
+                    <label for="email"><i class="fa-solid fa-at"></i> Your Email *</label>
+                    <input type="email" id="email" name="email" required placeholder="john@company.com">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="subject"><i class="fa-solid fa-tag"></i> Subject / Role / Inquiry *</label>
+                  <input type="text" id="subject" name="subject" required placeholder="Security Analyst Position / Project Discussion">
+                </div>
+
+                <div class="form-group">
+                  <label for="message"><i class="fa-solid fa-comment-dots"></i> Message Content *</label>
+                  <textarea id="message" name="message" rows="5" required placeholder="Hello Biniyam, we reviewed your cybersecurity portfolio and would like to discuss..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-cyan btn-block submit-btn" id="submit-btn">
+                  <span class="btn-text"><i class="fa-solid fa-paper-plane"></i> Transmit Message</span>
+                  <span class="btn-spinner"><i class="fa-solid fa-circle-notch fa-spin"></i></span>
+                </button>
+
+                <div id="form-feedback" class="form-feedback"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="footer-logo">
+            <span class="logo-symbol">&lt;</span><span class="logo-text">BINI576</span><span class="logo-slash">/</span><span class="logo-symbol">&gt;</span>
+          </a>
+          <p class="footer-motto">
+            Engineering resilient cybersecurity defenses, intelligent intrusion monitoring, and secure software solutions.
+          </p>
+        </div>
+
+        <div class="footer-nav">
+          <h4>Quick Navigation</h4>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-socials">
+          <h4>Connect Directly</h4>
+          <div class="social-icons">
+            <a href="https://github.com/bini576" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com/in/biniyam-ademasu" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:admasubiniyam96@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            <a href="tel:+251916545839" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> Biniyam Ademasu Afework. All Rights Reserved.</p>
+        <div class="security-badge">
+          <i class="fa-solid fa-shield-halved text-green"></i> <span>SECURITY PROFILE: ENCRYPTED // VERIFIED REPOSITORY</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- Custom Script -->
+  <script src="script.js"></script>
+</body>
+</html>
