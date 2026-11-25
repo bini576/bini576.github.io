@@ -607,7 +607,7 @@ function showToast(message) {
 }
 
 /* ==========================================================================
-   8. Contact Form Dispatch Simulation
+   8. Contact Form Real Email Dispatch (FormSubmit)
    ========================================================================== */
 function initContactForm() {
   const contactForm = document.getElementById('contact-form');
@@ -616,7 +616,7 @@ function initContactForm() {
 
   if (!contactForm || !submitBtn) return;
 
-  contactForm.addEventListener('submit', (e) => {
+  contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
 
     const name = document.getElementById('name').value.trim();
@@ -631,18 +631,44 @@ function initContactForm() {
     }
 
     submitBtn.classList.add('loading');
+    submitBtn.disabled = true;
     feedback.className = 'form-feedback';
     feedback.style.display = 'none';
 
-    // Simulate secure transmission
-    setTimeout(() => {
-      submitBtn.classList.remove('loading');
-      feedback.className = 'form-feedback success';
-      feedback.innerHTML = `<i class="fa-solid fa-circle-check"></i> Transmission dispatched successfully! Thank you ${escapeHtml(name)}, I will respond promptly.`;
+    try {
+      const response = await fetch('https://formsubmit.co/ajax/admasubiniyam96@gmail.com', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          name: name,
+          email: email,
+          _subject: `[Portfolio] ${subject}`,
+          _replyto: email,
+          message: message
+        })
+      });
 
-      showToast('Encrypted message transmitted!');
+      const data = await response.json();
+      if (!response.ok || (data.success !== 'true' && data.success !== true)) {
+        throw new Error(data.message || 'Failed to send message');
+      }
+
+      feedback.className = 'form-feedback success';
+      feedback.style.display = 'block';
+      feedback.innerHTML = `<i class="fa-solid fa-circle-check"></i> Message sent successfully! Thank you ${escapeHtml(name)}, I will respond promptly.`;
+      showToast('Message sent to inbox!');
       contactForm.reset();
-    }, 1200);
+    } catch (err) {
+      feedback.className = 'form-feedback error';
+      feedback.style.display = 'block';
+      feedback.innerHTML = `<i class="fa-solid fa-triangle-exclamation"></i> Could not send automatically. Please email me directly at <a href="mailto:admasubiniyam96@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}">admasubiniyam96@gmail.com</a>.`;
+    } finally {
+      submitBtn.classList.remove('loading');
+      submitBtn.disabled = false;
+    }
   });
 }
 
