@@ -376,7 +376,7 @@ Available Commands:
     whoami: () => `
 Name:        Biniyam Ademasu Afework
 Title:       Cybersecurity Analyst | Security Engineer | Full-Stack Developer
-Education:   B.Sc. Cyber Security, Bahir Dar University (GPA: 3.43 / 4.00)
+Education:   B.Sc. Cyber Security, Bahir Dar University
 Location:    Ethiopia (Open to remote worldwide & on-site opportunities)
 Mission:     Engineering robust defensive architectures, resilient code, and automated threat detection.
 `,
@@ -436,7 +436,6 @@ Mission:     Engineering robust defensive architectures, resilient code, and aut
 [+] Bachelor of Science in Cyber Security
     Institution:  Bahir Dar University (Faculty of Computing)
     Graduation:   June 2026
-    Cumulative:   3.43 / 4.00 GPA
     Key Focus:    Network Defense, Cryptography, Secure Software Architecture,
                   Ethical Hacking, Distributed Systems, ML for Security.
 `,
