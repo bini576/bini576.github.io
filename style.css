@@ -1190,7 +1190,17 @@ ul {
 .featured-project {
   grid-column: 1 / -1;
   border-color: rgba(0, 212, 255, 0.35);
-  background: linear-gradient(135deg, rgba(13, 19, 33, 0.95), rgba(8, 14, 28, 0.95));
+  background: linear-gradient(135deg, rgba(13, 19, 33, 0.96), rgba(8, 14, 28, 0.96));
+}
+
+.featured-project::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--purple, #8b5cf6), var(--cyan), var(--green, #10b981));
 }
 
 .project-card-banner {
@@ -1369,6 +1379,9 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: auto;
   padding-top: 1.1rem;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
